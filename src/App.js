@@ -6,8 +6,8 @@ import './App.css';
 import './Sidebar.css';
 import './Main.css';
 
-import DevForm from './components/DevForm';
-import DevItem from './components/DevItem';
+import ChallengeForm from './components/ChallengeForm';
+import ChallengeItem from './components/ChallengeItem';
 
 function App() {
 
@@ -35,19 +35,16 @@ function App() {
 
     <div id="app">
 
-      <aside>
-        <strong>Cadastrar</strong>
-        <DevForm onSubmit={handleAddDev}/>
-      </aside>
-
       <main>
-        <ul>
           {devs.map(dev => (
-            <DevItem key={dev._id} dev={dev} />
+            <ChallengeItem key={dev._id} dev={dev} />
           ))}
-
-        </ul>
       </main>
+      
+      <aside>
+        <strong>Solução</strong>
+        <ChallengeForm onSubmit={handleAddDev}/>
+      </aside>
 
     </div>
 

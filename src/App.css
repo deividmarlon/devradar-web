@@ -3,24 +3,29 @@
     margin: 0 auto;
     padding: 60px 30px;
 
-    display: flex;
+    display: grid;
     flex-direction: row;
+    grid-template-columns:1fr 1fr;
     align-items: flex-start;
 }
 
 #app main{
-    margin-left: 30px;
+    max-width: 500px;
+    margin: 0 auto;
 }
 
 @media (max-width: 1000px){
     #app{
+        display: block;
         flex-direction: column; 
     }
     #app main{
         margin-left: 0;
-        margin-top: 30px;
+        
+        width: 100%;
     }
     #app aside{
+        margin-top: 30px;
         width: 100%;
     }
 }

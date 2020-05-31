@@ -1,9 +1,10 @@
 aside{
-    width: 320px;
+    width: 100%;
     background: #FFF;
     box-shadow: 0 0 14px 0 rgba(0, 0, 0, 0.02);
     border-radius: 2px;
     padding: 30px 20px;
+    margin-top: 30px;
 }
 
 aside strong{
